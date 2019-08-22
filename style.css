@@ -1,0 +1,24 @@
+input {
+    border: 0 solid #000;
+    color: #495069;
+    background-color:#ccd9ff;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  #display{
+    width: 270px;
+    font-size: 26px;
+    text-align: right;
+    background-color:#80ff80;
+  }
+
+  #hasil{      
+    width: 270px;
+    font-size: 26px;
+    text-align: center;
+    background-color: blue
+  }

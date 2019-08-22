@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Exercise 2</title>
+    <title>CALCULAdOR</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-        <h1>Kalkulator</h1>
-    </center>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                <label type="text" style="color : red ; text-align: center; background-color: teal"> Casio FC 001 </label>  
+                </td>
+            </tr>
+           <tr>
+              <td colspan="4">
+                 <input type="text" name="display" id="display" disabled>                
+              </td>
+           </tr>
+           <tr>
+            <td><input type="button" name="tuju" value="7" onclick="calculator.display.value += '7'"></td>
+            <td><input type="button" name="delapan" value="8" onclick="calculator.display.value += '8'"></td>
+            <td><input type="button" name="sembilan" value="9" onclick="calculator.display.value += '9'"></td>
+            <td><input type="button" class="operator" name="kali" value="*" onclick="calculator.display.value += '*'"></td>
+        </tr>
+           <tr>
+            <td><input type="button" name="empat" value="4" onclick="calculator.display.value += '4'"></td>
+            <td><input type="button" name="lima" value="5" onclick="calculator.display.value += '5'"></td>
+            <td><input type="button" name="enam" value="6" onclick="calculator.display.value += '6'"></td>
+            <td><input type="button" class="operator" name="kurang" value="-" onclick="calculator.display.value += '-'"></td>
+        </tr>
+           <tr>
+            <td><input type="button" name="satu" value="1" onclick="calculator.display.value += '1'"></td>
+            <td><input type="button" name="dua" value="2" onclick="calculator.display.value += '2'"></td>
+            <td><input type="button" name="tiga" value="3" onclick="calculator.display.value += '3'"></td>
+            <td><input type="button" class="operator" name="tambah" value="+" onclick="calculator.display.value += '+'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="clear" value="C" onclick="calculator.display.value = ''"></td>
+            <td><input type="button" name="nol" value="0" onclick="calculator.display.value += '0'"></td>
+            <td><input type="button" class="operator" name="modulo" value="%" onclick="calculator.display.value += '%'"></td>
+            <td><input type="button" class="operator" name="bagi" value="/" onclick="calculator.display.value += '/'"></td>
+         </tr>
+         <tr>
+         <td colspan="4">
+            <input type="button" name="hasil" id="hasil" value="ENTER" onclick="calculator.display.value = eval(calculator.display.value)"> 
+            </td>
+        </tr>
+
+         </table>
+          </form>          
 </body>
 </html>
